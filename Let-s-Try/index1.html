@@ -36,55 +36,85 @@
             background-color: darkgreen;
         }
 
-        /* css for cards in row 1 */
-        .firstrowcard {
+        /* css for cards  */
+        .card {
             box-shadow: 10px 10px 25px rgb(90, 161, 31);
             background-color: rgb(255, 255, 255);
+            border-radius: 20px;
         }
 
-        .firstrowcard:hover {
+        .card:hover {
             transform: scale(1.1);
         }
 
-        /* css for the contents in card1 */
-        #card1h6,.card234 {
-            font-size:x-large;
+        #cardimg {
+            height: 175px;
+            border-radius: 20px 20px 0px 0px;
+        }
+
+        /* css for the contents in cards */
+        #card123 {
+            font-size: x-large;
             color: #ffc178;
             text-decoration: underline;
             font-family: "Work Sans";
         }
 
-        #card1para {
+        /* css for p in cards*/
+        #cp123 {
             font-size: smaller;
-            font-family: 'Roboto';
-            color: #5a6e79;
+            font-family:cursive;
+            color: #905f1f;
         }
 
-        /*hover effect for cardno4*/
-        #cardno4:hover {
-            transform: scale(1.1);
-        }
-
-    
-        /* css for p in card2,crd3,card4 */
-        #cp234 {
-            font-size: smaller;
-            font-family: 'Roboto';
+        /* css for h6 in cards*/
+        #watch123 {
             color: #5a6e79;
         }
-
-        /* css for h6 in card2,crd3,card4 with keep234 id*/
-        #keep234 {
-            color: #5a6e79;
+        #cardbut{
+            background-color: white;
+            border-style: none;
         }
     </style>
+
+
     <script type="text/javascript"> function showMyModalSetTitle(myTitle, myBodyHtml) {
 
             $('#myModalTitle').html(myTitle);
             $('#myModalBody').html(myBodyHtml);
 
             $('#myModal').modal('show');
-        }</script>
+        }
+     // Redirect function   
+        function redirect() {
+      window.location.href = "file:///D:/Let-s-Try/Let-s-Try/missingteddy.html";
+    }
+    function redirect1() {
+      window.location.href = "file:///D:/Let-s-Try/Let-s-Try/noparking.html";
+    }
+    function redirect2() {
+      window.location.href = "file:///D:/Let-s-Try/Let-s-Try/deadcat.html";
+    }
+    function redirect3() {
+      window.location.href = "file:///D:/Let-s-Try/Let-s-Try/homeless.html";
+    }
+    function redirect4() {
+      window.location.href = "file:///D:/Let-s-Try/Let-s-Try/roadwork.html";
+    }
+
+    function redirect5() {
+      window.location.href = "file:///D:/Let-s-Try/Let-s-Try/sofa.html";
+    }
+    function redirect6() {
+      window.location.href = "file:///D:/Let-s-Try/Let-s-Try/supertrolley.html";
+    }
+    function redirect7() {
+      window.location.href = "file:///D:/Let-s-Try/Let-s-Try/thebottle.html";
+    }
+    function redirect8() {
+      window.location.href = "file:///D:/Let-s-Try/Let-s-Try/treasure.html";
+    }
+        </script>
 </head>
 
 <body>
@@ -164,121 +194,121 @@
         <div style="display: flex; margin-top:400px;margin-left:100px;z-index: 1;position:absolute;">
 
             <!--card1-->
-            <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;">
-                <img style="height:154px;" src="assets/missing teddy.jpg" class="card-img-top">
+            <div class="card" class="card" style="width: 14rem;height:19rem;">
+                <img id="cardimg" src="assets/missing teddy.jpg" class="card-img-top">
                 <div class="card-body">
-                    <h6 id="card1h6" class="card-title">Season 01</h6>
-                    <p id="card1para" class="card-text">Episode 01</p>
-                    <a href="" style="text-decoration: none; color: #252c3a;">
-                        <h6 class="card-text">Watch ...</h6>
-                    </a>
+                    <h6 id="card123" class="card-title">Season 01</h6>
+                    <p id="cp123" class="card-text">Episode 01</p>
+                    <button id="cardbut" onclick="redirect()">
+                        <h6 id="watch123" class="card-text">Watch ...</h6>
+                    </button>
                 </div>
             </div>
 
             <!--card2-->
-            <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
-                <img src="assets/no parking.jpg" class="card-img-top">
+            <div class="card" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
+                <img id="cardimg" src="assets/no parking.jpg" class="card-img-top">
                 <div class="card-body">
-                    <h6 class="card234" class="card-title">Season 01</h6>
-                    <p id="cp234" class="card-text">Episode 02</p>
-                    <a href="" style="text-decoration: none;">
-                        <h6 id="keep234" class="card-text">Watch...</h6>
-                    </a>
+                    <h6 id="card123" class="card-title">Season 01</h6>
+                    <p id="cp123" class="card-text">Episode 02</p>
+                    <button id="cardbut" onclick="redirect1()">
+                        <h6 id="watch123" class="card-text">Watch ...</h6>
+                    </button>
                 </div>
             </div>
 
             <!--card3-->
-            <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
-                <img src="assets/dead cat.jpg" class="card-img-top">
+            <div class="card" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
+                <img id="cardimg" src="assets/dead cat.jpg" class="card-img-top">
                 <div class="card-body">
-                    <h6 class="card234" class="card-title">Season 01</h6>
-                    <p style="font-size:11px;" id="cp234" class="card-text">Episode 03</p>
-                    <a href="" style="text-decoration: none;">
-                        <h6 id="keep234" class="card-text">Watch...</h6>
-                    </a>
+                    <h6 id="card123" class="card-title">Season 01</h6>
+                    <p id="cp123" class="card-text">Episode 03</p>
+                    <button id="cardbut" onclick="redirect2()">
+                        <h6 id="watch123" class="card-text">Watch ...</h6>
+                    </button>
                 </div>
             </div>
 
 
-        <!--div containing cards row2-->
-        <div style="display: flex; position:absolute;margin-top:350px;margin-left:-18px;">
+            <!--div containing cards row2-->
+            <div style="display: flex; position:absolute;margin-top:350px;margin-left:-18px;">
 
-            <!--card1-->
-            <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
-                <img src="assets/homeless.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h6 class="card234" class="card-title">Season 02</h6>
-                    <p id="cp234" class="card-text">Episode 01</p>
-                    <a href="" style="text-decoration: none;">
-                        <h6 id="keep234" class="card-text">Watch...</h6>
-                    </a>
+                <!--card1-->
+                <div class="card" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
+                    <img id="cardimg" src="assets/homeless.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h6 id="card123" class="card-title">Season 02</h6>
+                        <p id="cp123" class="card-text">Episode 01</p>
+                        <button id="cardbut" onclick="redirect3()">
+                            <h6 id="watch123" class="card-text">Watch ...</h6>
+                        </button>
+                    </div>
+                </div>
+
+                <!--card2-->
+                <div class="card" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
+                    <img id="cardimg" src="assets/road works.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h6 id="card123" class="card-title">Season 02</h6>
+                        <p id="cp123" class="card-text">Episode 02</p>
+                        <button id="cardbut" onclick="redirect4()">
+                            <h6 id="watch123" class="card-text">Watch ...</h6>
+                        </button>
+                    </div>
+                </div>
+
+                <!--card3-->
+                <div class="card" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
+                    <img id="cardimg" src="assets/sofa.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h6 id="card123" class="card-title">Season 02</h6>
+                        <p id="cp123" class="card-text">Episode 03</p>
+                        <button id="cardbut" onclick="redirect5()">
+                            <h6 id="watch123" class="card-text">Watch ...</h6>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; position:absolute;margin-top:700px;margin-left:-18px;">
+
+                <!--card1-->
+                <div class="card" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
+                    <img id="cardimg" src="assets/super trolley.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h6 id="card123" class="card-title">Season 03</h6>
+                        <p id="cp123" class="card-text">Episode 01</p>
+                        <button id="cardbut" onclick="redirect6()">
+                            <h6 id="watch123" class="card-text">Watch ...</h6>
+                        </button>
+                    </div>
+                </div>
+
+                <!--card2-->
+                <div class="card" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
+                    <img id="cardimg" src="assets/the bottle.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h6 id="card123" class="card-title">Season 03</h6>
+                        <p id="cp123" class="card-text">Episode 02</p>
+                        <button id="cardbut" onclick="redirect7()">
+                            <h6 id="watch123" class="card-text">Watch ...</h6>
+                        </button>
+                    </div>
+                </div>
+
+                <!--card3-->
+                <div class="card" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
+                    <img id="cardimg" src="assets/treasure.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h6 id="card123" class="card-title">Season 03</h6>
+                        <p id="cp123" class="card-text">Episode 03</p>
+                        <button id="cardbut" onclick="redirect8()">
+                            <h6 id="watch123" class="card-text">Watch ...</h6>
+                        </button>
+                    </div>
                 </div>
             </div>
 
-            <!--card2-->
-            <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
-                <img src="assets/road works.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h6 class="card234" class="card-title">Season 02</h6>
-                    <p id="cp234" class="card-text">Episode 02</p>
-                    <a href="" style="text-decoration: none;">
-                        <h6 id="keep234" class="card-text">Watch...</h6>
-                    </a>
-                </div>
-            </div>
-
-            <!--card3-->
-            <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
-                <img src="assets/sofa.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h6 class="card234" class="card-title">Season 02</h6>
-                    <p id="cp234" class="card-text">Episode 03</p>
-                    <a href="" style="text-decoration: none;">
-                        <h6 id="keep234" class="card-text">Watch...</h6>
-                    </a>
-                </div>
-            </div>
         </div>
-        <div style="display: flex; position:absolute;margin-top:700px;margin-left:-18px;">
-
-            <!--card1-->
-            <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
-                <img src="assets/super trolley.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h6 class="card234" class="card-title">Season 03</h6>
-                    <p id="cp234" class="card-text">Episode 01</p>
-                    <a href="" style="text-decoration: none;">
-                        <h6 id="keep234" class="card-text">Watch...</h6>
-                    </a>
-                </div>
-            </div>
-
-            <!--card2-->
-            <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
-                <img src="assets/the bottle.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h6 class="card234" class="card-title">Season 03</h6>
-                    <p id="cp234" class="card-text">Episode 02</p>
-                    <a href="" style="text-decoration: none;">
-                        <h6 id="keep234" class="card-text">Watch...</h6>
-                    </a>
-                </div>
-            </div>
-
-            <!--card3-->
-            <div class="firstrowcard" class="card" style="width: 14rem;height:19rem;margin-left:15px;">
-                <img src="assets/treasure.jpg" class="card-img-top">
-                <div class="card-body">
-                    <h6 class="card234" class="card-title">Season 03</h6>
-                    <p id="cp234" class="card-text">Episode 03</p>
-                    <a href="" style="text-decoration: none;">
-                        <h6 id="keep234" class="card-text">Watch...</h6>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </div>
 </body>
 
 </html>
